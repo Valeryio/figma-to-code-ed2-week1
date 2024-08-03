@@ -1,9 +1,28 @@
 
+/*Importing bases and reset effects*/
 @import "../base/typo.css";
+@import "../base/reset.css";
+
+/*Importing predefined variables*/
+@import "../utils/variables.css";
+
+/*Importing the buttons and other components*/
+@import "../components/buttons.css";
+
+/*Importing the elements of the layout*/
+@import "../layout/header.css";
+@import "../layout/footer.css";
 
 
-.header
+
+body
 {
-    border: 1px solid;
-    font-family: "raleway";
+  padding: 0 7.5rem;
+  font-family: var(--ff-normal);
+  background-color: var(--clr-gray-bckground);
+}
+
+.hero-header
+{
+  display: flex;
 }

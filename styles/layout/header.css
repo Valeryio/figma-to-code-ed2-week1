@@ -1,0 +1,38 @@
+
+
+.header
+{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 2rem;
+}
+
+.header__nav
+{
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+
+  list-style: none;
+}
+
+.header__nav_links
+{
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: var(--clr-black-neutral-800);
+}
+
+.header__cta
+{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
