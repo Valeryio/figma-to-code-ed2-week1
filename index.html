@@ -29,32 +29,46 @@
         </header>
 
         <section class="hero-header">
-            <h1 class="hero-header__title">See the NFT new world</h1>
-            <p class="hero-header__desc">
-                Vorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Etiam eu turpis molestie, di
-            </p>
-    
-            <link class="hero-header__cta">
-                Discover Vow
-                <img src="./assets/icons/arrow_to_right.svg" alt="Arrow to right">
-            </link>
+
+            <div class="hero-header__content">
+                <h1 class="hero-header__title">See the NFT new world</h1>
+                <p class="hero-header__desc">
+                    Vorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Etiam eu turpis molestie, di
+                </p>
+        
+                <a class="hero-header__cta">
+                    Discover Vow
+                    <img src="./assets/icons/arrow_to_right.svg" alt="Arrow to right">
+                </a>
+            </div>
     
             <div class="hero-header__images">
-                <img src="./assets/icons/star_rings.svg" alt="Stars and rings">
-                <img src="./assets/images/doll_stone.png" alt="A doll in stone">
-                <img src="./assets/images/styled_monkey.png" alt=" A styled monkey">
+
+                <img src="./assets/icons/star_rings.svg" class="hero-header__star-rings"
+                alt="Stars and rings">
+
+                <div  class="hero-header__image-container">
+                    <img src="./assets/images/styled_monkey.png" class="hero-header__styled-monkey"
+                    alt=" A styled monkey">
+                </div>
+
+                <div class="hero-header__image-container" >
+                    <img src="./assets/images/doll_stone.png" class="hero-header__doll-stone"
+                    alt="A doll in stone">
+                </div>
             </div>
         </section>
     
         <section class="collections">
+            <h2 class="collections__title">Our collections</h2>
             <div class="collections__categories">
                 <ul>
-                    <li class="collection__category-label"></li>
-                    <li class="collection__category-label"></li>
-                    <li class="collection__category-label"></li>
-                    <li class="collection__category-label"></li>
-                    <li class="collection__category-label"></li>
+                    <li class="collection__category-label">All categories</li>
+                    <li class="collection__category-label">Art</li>
+                    <li class="collection__category-label">Celebrities</li>
+                    <li class="collection__category-label">Gaming</li>
+                    <li class="collection__category-label">Sport</li>
                 </ul>
     
                 <a href="#">view more</a>
@@ -62,17 +76,18 @@
     
             <div class="collections__card-container">
                 <div class="collections__card nft-card">
-                    <img src="" alt="" class="nft-image">
+                    <img src="./assets/images/cyberpunk.png" alt="" class="nft-image">
     
                     <div class="nft__desc">
-                        <p class="nft__name"></p>
+                        <p class="nft__name">Cyberpunk</p>
     
                         <div class="nft__value">
                             <img src="./assets/icons/ethereum-ellipse.svg" alt="An nft token" class="nft-token">
+                            <span class="nft_cost">68</span>
                         </div>
                     </div>
     
-                    <button class="nft-cta" ></button>
+                    <button class="nft-cta" >Place a Bid</button>
                 </div>
             </div>
         </section>

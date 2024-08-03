@@ -26,3 +26,70 @@ body
 {
   display: flex;
 }
+
+.hero-header__content
+{
+    display: flex;
+    margin: 2rem;
+    gap: 2rem;
+    flex-direction: column;
+    border: 1px solid violet;
+}
+
+.hero-header__title
+{
+  font-size: 120px;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.hero-header__desc
+{
+  font-size: 1rem;
+  font-weight: 500;
+  max-width: 25rem;
+}
+
+.hero-header__cta
+{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.hero-header__images
+{
+  display: flex;
+  position: relative;
+}
+
+.hero-header__star-rings
+{
+  /* position: absolute; */
+  max-width: 116px;
+}
+
+.hero-header__image-container
+{
+  width: 304px;
+  height: 440px; 
+  display: block;
+  overflow: hidden;
+  border-radius: 200px;
+  border: 1px solid red;
+}
+
+.hero-header__doll-stone, .hero-header__styled-monkey
+{
+  /* object-fit: cover; */
+  /* height: 100%; */
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  object-position: center;
+  /* object-position: -50px; */
+}
+
+
+
+
