@@ -173,3 +173,67 @@ body
   border-radius: 0.5rem;
   border: 1px solid var(--clr-black-neutral-800);
 }
+
+
+
+
+
+.company-values
+{
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  margin-bottom: 8rem;
+}
+
+.company-values__title
+{
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.company-values__card-container
+{
+  display: flex;
+  gap: 2rem;
+  justify-content: start;
+}
+
+.value-card
+{
+  padding: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  width: fit-content;
+  border-radius: 20px;
+  background-color: var(--clr-gray-neutral-50);
+}
+
+.value-card__img
+{
+  max-width: 4rem;
+}
+
+.value-card__title
+{
+  font-weight: 700;
+}
+
+.value-card__desc
+{
+  max-width: 18rem;
+  font-weight: 500;
+}
+
+
+
+
+
+.cta-section
+{
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-direction: column;
+}
