@@ -25,6 +25,7 @@ body
 .hero-header
 {
   display: flex;
+  margin-bottom: 8rem;
 }
 
 .hero-header__content
@@ -93,3 +94,82 @@ body
 
 
 
+.collections
+{
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  margin-bottom: 4rem;
+}
+
+.collections__title
+{
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.collections__categories-container
+{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.collections__categories
+{
+  display: flex;
+  padding: 0;
+  gap: 2rem;
+  list-style: none;
+}
+
+.collections__category-label
+{
+    padding: 0.8rem 1.5rem;
+    border-radius: 1rem;
+    background-color: var(--clr-gray-neutral-50);
+}
+
+
+.nft-card
+{
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+
+  width: fit-content;
+  padding: 1rem;
+
+  border: 2px solid var(--clr-gray-neutral-100);
+  border-radius: 20px;
+}
+
+.nft-card__image
+{
+  width: auto;
+  max-height: 213px;
+  border-radius: 20px;
+}
+
+.nft-card__desc
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+.nft-card__value
+{
+  display: flex;
+}
+
+.nft-card-cta
+{
+  width: 100%;
+  padding: 0.8rem 0;
+
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border: 1px solid var(--clr-black-neutral-800);
+}
