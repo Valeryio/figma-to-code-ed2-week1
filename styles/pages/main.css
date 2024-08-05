@@ -232,8 +232,36 @@ body
 
 .cta-section
 {
+  width: 100%;
   display: flex;
   gap: 2rem;
   align-items: center;
   flex-direction: column;
+  border: 1px solid;
+  padding: 4rem;
+  border: 1px solid red;
+  border-radius: 2rem;
+  margin-bottom: 4rem;
+
+  color: white;
+
+  
+  background-image:
+                    linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)),
+                    url("../../assets/images/astronaut.png");
+  background-size: cover;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+}
+
+.cta-section__title
+{
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.cta-section__desc
+{
+  font-size: 1.5rem;
+  font-weight: 500;
 }
