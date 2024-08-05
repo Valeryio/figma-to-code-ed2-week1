@@ -14,6 +14,7 @@
 .footer__content
 {
   display: flex;
+  flex-wrap: wrap;
   padding: 1.5rem 0;
   align-items: center;
   justify-content: space-between;

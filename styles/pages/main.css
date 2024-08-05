@@ -19,7 +19,8 @@
 
 body
 {
-  padding: 0 7.5rem;
+  /* padding: 0 7.5rem; */
+  padding: 0 clamp(0.5rem, 1rem + 7.5%, 7rem);
   font-family: var(--ff-normal);
   background-color: var(--clr-gray-bckground);
 }
@@ -27,6 +28,7 @@ body
 .hero-header
 {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 8rem;
 }
 
@@ -41,7 +43,8 @@ body
 
 .hero-header__title
 {
-  font-size: 120px;
+  /* font-size: 120px; */
+  font-size: clamp(2.5rem, 2rem + 2vh, 120px);
   font-weight: 400;
   line-height: 100%;
 }
@@ -62,36 +65,49 @@ body
 
 .hero-header__images
 {
-  display: flex;
+  display: grid;
   position: relative;
+  
+  max-width: 42rem;
+  gap: 1rem 1.5rem;
+  grid-template-columns: 280px 280px;
+  grid-template-rows: repeat(6, 80px);
+  /* border: 2px solid crimson; */
 }
 
 .hero-header__star-rings
 {
-  /* position: absolute; */
   max-width: 116px;
+  /* position: absolute; */
 }
 
 .hero-header__image-container
 {
-  width: 304px;
+  min-width: 256px;
+  max-width: 304px;
   height: 440px; 
   display: block;
   overflow: hidden;
   border-radius: 200px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
-.hero-header__doll-stone, .hero-header__styled-monkey
+.hero-header__doll-stone
 {
-  /* object-fit: cover; */
-  /* height: 100%; */
+  grid-row: 2;
+  border: 2px solid;
+}
+
+
+.hero-header__doll-stone-img, .hero-header__styled-monkey-img
+{
   height: 100%;
   width: auto;
   object-fit: cover;
   object-position: center;
-  /* object-position: -50px; */
 }
+
+
 
 
 
@@ -123,23 +139,28 @@ body
   display: flex;
   padding: 0;
   gap: 2rem;
+  flex-wrap: wrap;
   list-style: none;
-}
-
-.collections__category-label
-{
-
 }
 
 .collections__card-container
 {
   display: flex;
-  gap: 2rem;
-  justify-content: start;
+  gap: 2.8rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
+.collections__cta-link
+{
+  text-decoration: none;
+  color: var(--clr-black-neutral-600)
+}
 
-
+.collections__cta-link:hover
+{
+  font-weight: 500;
+}
 
 .company-values
 {
@@ -158,8 +179,10 @@ body
 .company-values__card-container
 {
   display: flex;
-  gap: 2rem;
-  justify-content: start;
+  gap: 2rem 1.5rem;
+  flex-wrap: wrap;
+  bordeR: 1px solid;
+  justify-content: center;
 }
 
 
@@ -175,7 +198,6 @@ body
   flex-direction: column;
   border: 1px solid;
   padding: 4rem;
-  border: 1px solid red;
   border-radius: 2rem;
   margin-bottom: 4rem;
 
@@ -186,7 +208,6 @@ body
                     linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)),
                     url("../../assets/images/astronaut.png");
   background-size: cover;
-  /* background-position: center; */
   background-repeat: no-repeat;
 }
 

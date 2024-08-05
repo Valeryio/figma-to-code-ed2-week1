@@ -3,9 +3,9 @@
 {
   padding: 2rem;
   width: fit-content;
-  
+  max-width: 19rem;
   display: flex;
-  gap: 1rem;
+  gap: 0.8rem;
   flex-direction: column;
 
   border-radius: 20px;
