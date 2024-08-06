@@ -19,7 +19,6 @@
 
 body
 {
-  /* padding: 0 7.5rem; */
   padding: 0 clamp(0.5rem, 1rem + 7.5%, 7rem);
   font-family: var(--ff-normal);
   background-color: var(--clr-gray-bckground);
@@ -29,26 +28,21 @@ body
 {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 8rem;
-  border: 1px solid;
+  margin-bottom: 3rem;
 }
 
 .hero-header__content
 {
     display: flex;
-    /* margin: 2rem; */
     gap: 2rem;
     flex-direction: column;
-    border: 1px solid violet;
 }
 
 .hero-header__title
 {
-  /* font-size: 120px; */
   font-size: clamp(2.5rem, 0.5rem + 8vw, 120px);
   font-weight: 400;
   line-height: 100%;
-  /* font-size: 120px; */
   max-width: 44rem;
 }
 
@@ -64,6 +58,8 @@ body
     display: flex;
     gap: 2rem;
     align-items: center;
+
+    cursor: pointer;
 }
 
 .hero-header__images
@@ -76,14 +72,12 @@ body
   gap: 1rem 1.5rem;
   grid-template-columns: 280px 280px;
   grid-template-rows: repeat(6, 80px);
-  border: 2px solid crimson;
 }
 
 .hero-header__star-rings
 {
   max-width: 116px;
   opacity: 0;
-  /* position: absolute; */
 }
 
 .hero-header__image-container
@@ -94,7 +88,6 @@ body
   display: block;
   overflow: hidden;
   border-radius: 200px;
-  /* border: 1px solid red; */
 }
 
 .hero-header__doll-stone
@@ -103,8 +96,8 @@ body
   border: 2px solid;
 }
 
-
-.hero-header__doll-stone-img, .hero-header__styled-monkey-img
+.hero-header__doll-stone-img,
+.hero-header__styled-monkey-img
 {
   height: 100%;
   width: auto;
@@ -116,13 +109,15 @@ body
 
 
 
-
+/*---------------------------------------*\
+        Collection of NFT section
+\*---------------------------------------*/
 .collections
 {
   display: flex;
   gap: 2rem;
   flex-direction: column;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
 }
 
 .collections__title
@@ -167,12 +162,19 @@ body
   font-weight: 500;
 }
 
+
+
+
+
+/*---------------------------------------*\
+        Value of the company section
+\*---------------------------------------*/
 .company-values
 {
   display: flex;
   gap: 2rem;
   flex-direction: column;
-  margin-bottom: 8rem;
+  margin-bottom: 6rem;
 }
 
 .company-values__title
@@ -186,14 +188,15 @@ body
   display: flex;
   gap: 2rem 1.5rem;
   flex-wrap: wrap;
-  bordeR: 1px solid;
   justify-content: center;
 }
 
 
 
 
-
+/*---------------------------------------*\
+        CALL TO ACTION section
+\*---------------------------------------*/
 .cta-section
 {
   width: 100%;
@@ -201,16 +204,17 @@ body
   gap: 2rem;
   align-items: center;
   flex-direction: column;
-  border: 1px solid;
+  margin-bottom: 6rem;
   padding: 4rem;
+
+  border: 1px solid;
   border-radius: 2rem;
-  margin-bottom: 4rem;
 
   color: white;
-
-  
   background-image:
-                    linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)),
+                    linear-gradient(to top,
+                                        rgba(0, 0, 0, 0.1), 
+                                        rgba(0, 0, 0, 0.3)),
                     url("../../assets/images/astronaut.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -219,20 +223,33 @@ body
 .cta-section__title
 {
   font-size: 4rem;
+  font-size: clamp(2rem, 1rem + 2vw, 4rem);
   font-weight: 600;
+  text-align: center;
 }
 
 .cta-section__desc
 {
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 0.5rem + 2vw, 1.5rem);
   font-weight: 500;
+  text-align: center;
 }
 
 
 
 
-
+/*---------------------------------------*\
+        Responsive of the page
+\*---------------------------------------*/
 @media screen and (max-width: 768px) {
+
+
+  body
+  {
+    width: 100%;
+    height: fit-content;
+    /* overflow: hidden; */
+  }
 
   .hero-header__star-rings
   {
